@@ -1,1 +1,21 @@
-theme: jekyll-theme-cayman
+# Site settings
+baseurl: "/0jekyll" # /gh-pages
+asseturl: "/0jekyll/assets"
+skin: "bs4"
+
+# langsite
+lang:
+ brandname: "0jekyll"
+ read_more: ">>"
+ showpostby: "danh mục: "
+ postincat: "cùng mục"
+ postintag: "cùng thẻ"
+ ghim: "nổi bật"
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title
+paginate: 12
+paginate_path: /page:num
+
+gems: [jekyll-paginate]
