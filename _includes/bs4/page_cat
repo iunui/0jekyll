@@ -1,10 +1,6 @@
-<main>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8 img-thumbnail">
-<div class="row">
-{% include {{site.skin}}/728x90 %}
-</div>
 {% assign data = site.categories[c] %}
 		{% for post in data %}
 {% assign cdate = post.date | date: "%Y" %}
@@ -28,4 +24,3 @@
 			</div>
 		</div>
 	</div>
-</main>

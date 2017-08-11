@@ -8,9 +8,7 @@
 			<p class="h3">{{page.title}}</p>
 	{{content}}
 		</div>
-<div class="row">
-{% include postincat view='grid' %}
-</div>
+
 			</div>
 			<div class="col-md-4" id="side">
 {% include carousel key='assets/itemsslider' url='items' %}

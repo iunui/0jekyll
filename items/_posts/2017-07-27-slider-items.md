@@ -5,4 +5,4 @@ author: admin
 tags: [ghim]
 ---
 Noi dung o day ho tro mardown
-{% include carousel key='assets/slider-items' url='items' %}
+{% include carousel key='assets/itemsslider' url='items' %}

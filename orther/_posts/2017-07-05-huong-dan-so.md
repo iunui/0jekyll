@@ -14,16 +14,19 @@ thumb: logo.png
 - Lưu ý là thumb nếu là link có http thì tự code sẽ hiển thị hình luôn còn ko là dạng tenhinh.jpg, bạn hãy tải lên thư mục assets/tenhinh.jpg
 
 ### Thêm vào bài viết
-- Hình là liên kết hoặc trong mục assets
+- Hình là liên kết
 ```
 { % include img key="//tenmien.xyz/tenhinh.jpg" % }
-{ % include img key="tenhinh.jpg" % }
+{ % include img key="http://tenmien.xyz/tenhinh.jpg" % }
+{ % include img key="https://tenmien.xyz/tenhinh.jpg" % }
 ```
-- Hình là post id
+- Hình thu muc page-id trong assets
 ```
-{ % include imgpost key="/tenhinh.jpg" % }
-{ % include imgpost key="/tenhinh1.jpg" % }
-{ % include imgpost key="/tenhinh2.jpg" % }
+{ % include img key="/tenhinh.jpg" % }
+```
+- Hình la page-id.jpg trong assets
+```
+{ % include img % }
 ```
 - Kiểu album
 ```

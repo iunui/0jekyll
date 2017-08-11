@@ -1,7 +1,7 @@
 # Site settings
 baseurl: "/0jekyll" # /gh-pages
 asseturl: "/0jekyll/assets"
-skin: "bs4"
+skin: "bs3"
 
 # langsite
 lang:

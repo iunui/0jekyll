@@ -28,22 +28,22 @@ Tải project 0jekyll về.
 
 Tải project của bạn về.
 > git clone https://github.com/username/gido
-{% include imgpost key='/1.png' %}
+{% include img key='/1.png' %}
 copy hết file trong 0jekyll qua project của bạn (xóa hết rồi copy củng đc)
 
 Giờ làm việc với project của bạn. Sửa file _config.yml đổi cho giống tên project bạn
-{% include imgpost key='/2.png' %}
+{% include img key='/2.png' %}
 
 Tiếp thêm file dùng "git add ." > git commit -am "gido" . hình bằng app
-{% include imgpost key='/3.png' %}
-{% include imgpost key='/4.png' %}
-{% include imgpost key='/5.png' %}
+{% include img key='/3.png' %}
+{% include img key='/4.png' %}
+{% include img key='/5.png' %}
 
 Tiếp đẩy lên github dùng "git push" nó sẽ hỏi user,pass > cứ nhập từ từ mà đúng dù nó hiện ****
-{% include imgpost key='/6.png' %}
-{% include imgpost key='/7.png' %}
-{% include imgpost key='/8.png' %}
-{% include imgpost key='/9.png' %}
+{% include img key='/6.png' %}
+{% include img key='/7.png' %}
+{% include img key='/8.png' %}
+{% include img key='/9.png' %}
 
 xong truy cập url, khác liền. 
 Ở trên có chỉ cách thêm file và đẩy lên github, chú ý nhé vì sẽ dùng hoài
