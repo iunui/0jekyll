@@ -1,6 +1,4 @@
-
-{% for tag in page.tags %}{% for post in site.tags[tag] limit:include.num %}{% if post.id != page.id %}
-
+{% for post in site.posts limit:include.num %}
 {% case include.view %}
     {% when 'list' %}
         {% include {{site.skin}}/view_list %}
@@ -9,5 +7,4 @@
     {% else %}
         {% include {{site.skin}}/view_li %}
 {% endcase %}
-
-{% endif %}{% endfor %}{% endfor %}
+{% endfor %}

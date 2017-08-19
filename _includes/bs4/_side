@@ -1,12 +1,4 @@
-{% include carousel key='assets/ortherslider' url='orther' %}
 <div class="row">
-	<div class="col-6">
-<ul class="row list-group">
 {% include postintag %}
-</ul>
-	</div>
-	<div class="col-6">
-{% include post_year num='24' %}
-	</div>
-{% include {{site.skin}}/336x280 %}
+{% include post_year %}
 </div>

@@ -11,6 +11,15 @@
 	<link href="{{site.url}}{{site.asseturl}}/skin_{{site.skin}}.css" rel="stylesheet"/>	
 {% include fbmeta %}
 	<title>{{page.title}}</title>
+<style>
+body {background:#eee;}
+img{display:block;margin:0 auto;max-width:75%;}
+.pagination{margin-bottom:0;}
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {display: block !important;}
+.carousel-caption {top: 0;bottom: auto;}
+.navcat{display:inline-block;max-height:64px;}
+.thumbfix>img{max-height:180px;overflow:hidden;object-fit:contain;}
+</style>
 </head>
 <body>
 <header class="clearfix bg-warning">

@@ -5,31 +5,21 @@
 {% include navp %}
 			</div>
 		<div class="img-thumbnail">
+<div class="col-md-3 float-right">{% include toc %}</div>
 			<p class="h3">{{page.title}}</p>
 	{{content}}
 		</div>
-<div class="row">
-{% include postincat view='grid' %}
-</div>
+<div class="col-sm-12"><div class="row">{% include postincat view='grid' num='12' %}</div></div>
 			</div>
 			<div class="col-md-4" id="side">
-{% include carousel key='assets/itemsslider' url='items' %}
-				<div class="row">
-				<div class="col-6">
-<div class="row d-block">
-{% include postintag view='list' %}
+{% include toc %}
+				<div class="row">{% include postintag %}</div>
+				<div class="row">{% include post_year %}</div>
+{% include sitetags %}
+<div class="row">
+<div class="col-md-6"></div>
+<div class="col-md-6"></div>
 </div>
-				</div>
-
-				<div class="col-6">
-<ul class="row list-group">
-{% include postincat %}
-</ul>
-<ul class="row list-group">
-{% include postintag %}
-</ul>
-{% include post_year %}
-				</div>
           </div>
 			</div>
 

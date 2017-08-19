@@ -1,11 +1,10 @@
-<div class="row">
 {% for post in site.posts  %}
     {% capture siteyear %}{{post.date | date: "%Y"}}{% endcapture %}{% capture sitemonth %}{{post.date | date: "%B"}}{% endcapture %}
     {% capture postyear %}{{post.previous.date | date: "%Y"}}{% endcapture %}{% capture postmonth %}{{post.previous.date | date: "%B"}}{% endcapture %}
 
     {% if forloop.first %}
 <a href="{{site.baseurl}}/archive#{{siteyear}}">{{siteyear}}</a>
-<a class="btn btn-block" data-toggle="collapse" href="#collapse{{siteyear}}{{sitemonth}}"><b class="float-left">{{sitemonth}}</b></a>
+<a class="btn btn-block" data-toggle="collapse" href="#collapse{{siteyear}}{{sitemonth}}"><b class="float-left pull-left">{{sitemonth}}</b></a>
     <ul class="unstyled" id="collapse{{siteyear}}{{sitemonth}}">
     {% endif %}
 
@@ -28,4 +27,3 @@
         {% endif %}
     {% endif %}
 {% endfor %}
-</div>
