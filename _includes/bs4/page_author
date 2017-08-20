@@ -2,7 +2,8 @@
 		<div class="row">
 			<div class="col-md-8 img-thumbnail">
 					<div class="row">
-<div class="col-md-6"><div class="row">
+<div class="col-md-6">
+<div class="row">
 <div class="col-sm-12 -embed-responsive embed-responsive-4by3">
 <div id="{{a}}" class="carousel slide embed-responsive-item" data-ride="carousel">
 <div class="carousel-inner" role="listbox">
