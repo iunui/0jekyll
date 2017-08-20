@@ -1,31 +1,9 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-8 img-thumbnail">
-
-{% for post in site.posts limit:include.num %}
-{% if post.author contains a %}
-	
-{% assign npost = site.categories[c]|size %}
-{% assign cdate = post.date | date: "%Y" %}
-{% if cdate != date %}
-{% unless forloop.first %}</ul>{% endunless %}
-<a data-toggle="collapse" href="#auth{{cdate}}" class="btn btn-warning">{{cdate}}</a>
-{% if npost > 48 %}
-<ul class="collapse" id="auth{{cdate}}">
-{% else %}
-<ul class="collapse.show" id="auth{{cdate}}">
-{% endif %}
-{% assign date = cdate %}
-{% endif %}
-{% include {{site.skin}}/view_li %}
-
-{% endif %}
-{% endfor %}
-
-			</div>
-			<div class="col-md-4">
-<div class="row">
-<div class="embed-responsive embed-responsive-16by9">
+					<div class="row">
+<div class="col-md-6"><div class="row">
+<div class="col-sm-12 -embed-responsive embed-responsive-4by3">
 <div id="{{a}}" class="carousel slide embed-responsive-item" data-ride="carousel">
 <div class="carousel-inner" role="listbox">
 <ol class="carousel-indicators">
@@ -52,7 +30,29 @@
 <a class="carousel-control-next right carousel-control" href="#{{a}}" role="button" data-slide="next"><span class="carousel-control-next-icon glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
 </div>
 </div>
+</div></div>
+<div class="col-md-6">
+{% for post in site.posts limit:include.num %}
+{% if post.author contains a %}
+{% assign npost = site.categories[c]|size %}
+{% assign cdate = post.date | date: "%Y" %}
+{% if cdate != date %}
+{% unless forloop.first %}</ul>{% endunless %}
+<a data-toggle="collapse" href="#auth{{cdate}}" class="btn btn-warning">{{cdate}}</a>
+{% if npost > 48 %}
+<ul class="list-unstyled collapse" id="auth{{cdate}}">
+{% else %}
+<ul class="list-unstyled collapse.show" id="auth{{cdate}}">
+{% endif %}
+{% assign date = cdate %}
+{% endif %}
+{% include {{site.skin}}/view_li %}
+{% endif %}
+{% endfor %}
 </div>
+</div>
+			</div>
+			<div class="col-md-4">
 {% include {{site.skin}}/_side %}
 			</div>
 		</div>
