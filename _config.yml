@@ -18,4 +18,6 @@ permalink: /:categories/:title
 paginate: 12
 paginate_path: /page:num
 
-gems: [jekyll-paginate]
+plugins:
+ - jekyll-feed
+ - jekyll-paginate
