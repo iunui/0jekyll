@@ -1,12 +1,13 @@
 # Site settings
 baseurl: "/0jekyll" # /gh-pages
 asseturl: "/0jekyll/assets"
-skin: "bs4"
+skin: "bs3"
 
 # langsite
 lang:
  brandname: "0jekyll"
  read_more: ">>"
+ view: "XEM"
  showpostby: "danh mục: "
  postincat: "cùng mục"
  postintag: "cùng thẻ"
