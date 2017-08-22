@@ -1,7 +1,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-6 col-md-8" id="main">
-{% include carousel key='assets/ortherslider' url='orther' %}
+<div class="row">{% include carousel key='assets/ortherslider' url='orther' %}</div>
 			</div>
 			<div class="col-sm-6 col-md-4" id="side">
 				<div class="row">
@@ -38,7 +38,6 @@
 		  {% include {{site.skin}}/view_grid img='1' %}
 		{% endfor %}
 </div>
-
 <div class="d-flex justify-content-center">
 {% include pagi %}
 </div>

@@ -1,10 +1,9 @@
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-8 img-thumbnail">
+			<div class="col-md-8">
 			<div class="row">
 <div class="col-md-6">
-<div class="-embed-responsive embed-responsive-16by9">
-<div id="{{c}}" class="carousel slide embed-responsive-item" data-ride="carousel">
+<div id="{{c}}" class="carousel slide" data-ride="carousel">
 <div class="carousel-inner" role="listbox">
 <ol class="carousel-indicators">
 {% assign cnt=0 %}
@@ -18,14 +17,13 @@
 {% for post in site.categories[c] limit:10 %}
 <div class="carousel-item item{% if num==0 %} active{% endif %}">
 	{% include imgthumb %}
-	<div class="carousel-caption"><a href="{{site.baseurl}}{{post.url}}" class="btn btn-outline-success">XEM</a></div>
+	<div class="carousel-caption"><a href="{{site.baseurl}}{{post.url}}" class="btn btn-outline-success">{{site.lang.view}}</a></div>
 </div>
 {% assign num=num|plus:1 %}
 {% endfor %}
 </div>
 <a class="carousel-control-prev left carousel-control" href="#{{c}}" role="button" data-slide="prev"><span class="carousel-control-prev-icon glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Prev</span></a>
 <a class="carousel-control-next right carousel-control" href="#{{c}}" role="button" data-slide="next"><span class="carousel-control-next-icon glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
-</div>
 </div>
 </div>
 		<div class="col-md-6">
@@ -44,11 +42,11 @@
 {% endif %}
 {% include {{site.skin}}/view_li %}
 {% endfor %}
-</div>
-</div>
+		</div>
+
+				</div>
 			</div>
 			<div class="col-md-4">
-
 {% include {{site.skin}}/_side %}
 			</div>
 		</div>

@@ -1,0 +1,4 @@
+<div class="row"><div class="col-xs-6">
+<div class="row">{% include {{site.skin}}/200x200 %}<ul class="list-group">{% include postintag %}</ul></div>
+</div><div class="col-xs-6">{% include post_year %}
+<div class="row">{% include {{site.skin}}/180x150 %}</div></div><div class="col-xs-12"><div class="row">{% include sitetags %}{% include {{site.skin}}/336x280 %}</div></div></div>
