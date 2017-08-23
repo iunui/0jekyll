@@ -1,11 +1,10 @@
-
 {% for post in site.posts  %}
     {% capture siteyear %}{{post.date | date: "%Y"}}{% endcapture %}{% capture sitemonth %}{{post.date | date: "%B"}}{% endcapture %}
     {% capture postyear %}{{post.previous.date | date: "%Y"}}{% endcapture %}{% capture postmonth %}{{post.previous.date | date: "%B"}}{% endcapture %}
 
     {% if forloop.first %}
 <a href="{{site.baseurl}}/archive#{{siteyear}}">{{siteyear}}</a>
-<a class="btn btn-block" data-toggle="collapse" href="#collapse{{siteyear}}{{sitemonth}}"><b class="float-left pull-left">{{cnt}}{{sitemonth}}</b></a><br>
+<a class="btn btn-block" data-toggle="collapse" href="#collapse{{siteyear}}{{sitemonth}}"><b class="float-left pull-left">{{sitemonth}}</b></a><br>
     <ul class="unstyled" id="collapse{{siteyear}}{{sitemonth}}">
     {% endif %}
 
@@ -17,13 +16,13 @@
         {% if siteyear != postyear %}
         </ul>
 <a href="{{site.baseurl}}/archive#{{postyear}}">{{postyear}}</a>
-<a class="btn btn-block" data-toggle="collapse" href="#collapse{{postyear}}{{postmonth}}"><b class="float-left pull-left">{{cnt}}{{postmonth}}</b></a><br>
+<a class="btn btn-block" data-toggle="collapse" href="#collapse{{postyear}}{{postmonth}}"><b class="float-left pull-left">{{postmonth}}</b></a><br>
         <ul class="unstyled collapse" id="collapse{{postyear}}{{postmonth}}">
         
 			{% else %}    
             {% if sitemonth != postmonth %}
             </ul>
-<a class="btn btn-block" data-toggle="collapse" href="#collapse{{postyear}}{{postmonth}}"><b class="float-left pull-left">{{cnt}}{{postmonth}}</b></a><br>
+<a class="btn btn-block" data-toggle="collapse" href="#collapse{{postyear}}{{postmonth}}"><b class="float-left pull-left">{{postmonth}}</b></a><br>
             <ul class="unstyled collapse" id="collapse{{postyear}}{{postmonth}}">
 
             {% endif %}

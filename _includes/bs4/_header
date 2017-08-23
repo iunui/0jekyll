@@ -22,10 +22,11 @@ img{display:block;margin:0 auto;max-width:75%;}
 .thumbfix>img{max-height:180px;overflow:hidden;object-fit:contain;}
 </style>
 </head>
-<body>
+<body><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <header class="clearfix bg-warning">
 	<a href="{{site.url}}{{site.baseurl}}/"><img src="{{site.asseturl}}/logo.png" alt="{{site.lang.brandname}}" class="navcat"/></a>
 	<div class="float-right">
 	{% include navc %}
 	</div>
 </header>
+<div class="container-fluid"><div class="row">

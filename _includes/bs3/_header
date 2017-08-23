@@ -3,4 +3,6 @@
 img{display:block;margin:0 auto;max-width:75%;}.navcat{display:inline-block;max-height:48px;}.thumb180>img{width:180px;height:150px;overflow:hidden;object-fit:cover;}
 .carousel-caption {top:0;bottom:auto;}
 </style>
-</head><body><header><a href="{{site.url}}{{site.baseurl}}/"><img src="{{site.asseturl}}/logo.png" alt="{{site.lang.brandname}}" class="navcat"/>{{site.lang.brandname}}</a><span class="pull-right">{% include navc %}</span></header>
+</head><body><div class="container-fluid"><div class="row">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<header class="clearfix"><span class="pull-left"><a href="{{site.url}}{{site.baseurl}}/"><img src="{{site.asseturl}}/logo.png" alt="{{site.lang.brandname}}" class="navcat"/>{{site.lang.brandname}}</a></span><span class="pull-right">{% include navc %}</span></header>
