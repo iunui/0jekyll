@@ -8,13 +8,12 @@
 	<link href="{{site.url}}{{site.asseturl}}/favicon.png" rel="icon"/>
 	<link href="{{site.url}}{{site.asseturl}}/bootstrap/v4/css/bootstrap.min.css" rel="stylesheet"/>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" rel="stylesheet"/>
-	<link href="{{site.url}}{{site.asseturl}}/skin_{{site.skin}}.css" rel="stylesheet"/>	
 {% include fbmeta %}
 
 	<title>{{page.title}}</title>
 <style>
 body {background:#eee;}
-img{display:block;margin:0 auto;max-width:75%;}
+img{display:block;margin:0 auto;max-width:90%;}
 .pagination{margin-bottom:0;}
 .carousel-item-next, .carousel-item-prev, .carousel-item.active {display: block !important;}
 .carousel-caption {top: 0;bottom: auto;}
@@ -23,8 +22,8 @@ img{display:block;margin:0 auto;max-width:75%;}
 </style>
 </head>
 <body><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<header class="clearfix bg-warning">
-	<a href="{{site.url}}{{site.baseurl}}/"><img src="{{site.asseturl}}/logo.png" alt="{{site.lang.brandname}}" class="navcat"/></a>
+<header class="clearfix">
+	<a href="{{site.url}}{{site.baseurl}}/"><img src="{{site.asseturl}}/logo.png" alt="{{site.lang.brandname}}" class="navcat"/>{{site.lang.brandname}}</a>
 	<div class="float-right">
 	{% include navc %}
 	</div>
